@@ -7,4 +7,7 @@ export default defineConfig({
     presetUno(),
     presetIcons({ /* options */ }),
   ],
+  shortcuts: {
+    'bg-axugray': 'bg-#f8fafc'
+  }
 });
