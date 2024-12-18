@@ -27,11 +27,11 @@ function generate(): void {
     <CBaseInput v-model="lastUpdatedYear" label="最後に更新された年（西暦）" caution="年を入力してください" is-required />
     <CBaseInput v-model="ownerName" label="著作者名" caution="名前を入力してください" is-required />
     <CBaseSwitch v-model="isAllRightsReserved" label="無断転載禁止" caution="" is-required switch-label="ON/OFF" />
-    <div class="flex w-full h-20px" />
+    <CBaseHorizontalLine />
     <CBaseButton label="生成" @click="generate" />
-    <div class="flex w-full h-20px" />
-    <div>
-      <p id="result-paragraph"></p>
+    <CBaseHorizontalLine />
+    <div class="flex items-center justify-center text-center text-gray-7 text-22px font-600">
+      <p id="result-paragraph" class="font-notosansjp"></p>
     </div>
   </CTool>
 </template>
