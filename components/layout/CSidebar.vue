@@ -13,7 +13,8 @@
         <CSidebarLink label="ホーム" href="/" />
       </CSidebarGroup>
       <CSidebarGroup label="Generators">
-        <CSidebarLink label="著作権表記生成（開発中）" href="/tools/generators/copyright-text-generator/" />
+        <CSidebarLink label="著作権表記生成" href="/tools/generators/copyright-text-generator/" />
+        <CSidebarLink label="ライセンス生成" href="/tools/generators/license-text-generator/" />
       </CSidebarGroup>
     </div>
   </div>

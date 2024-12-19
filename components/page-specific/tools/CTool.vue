@@ -12,12 +12,12 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="max-md:px-10px">
-    <div class="mt-20px mb-10px max-w-600px">
+  <div class="max-md:px-10px w-600px">
+    <div class="mt-20px mb-10px w-full">
       <p class="font-notosansjp text-26px font-600">{{ title }}</p>
       <p class="font-notosansjp text-14px font-500 text-gray-5">{{ description }}</p>
     </div>
-    <div>
+    <div class="w-full">
       <slot />
     </div>
   </div>
