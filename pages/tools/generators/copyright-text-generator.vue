@@ -26,7 +26,7 @@ function generate(): void {
     <CBaseInput v-model="firstCreatedYear" label="最初に作られた年（西暦）" caution="年を入力してください" is-required />
     <CBaseInput v-model="lastUpdatedYear" label="最後に更新された年（西暦）" caution="年を入力してください" is-required />
     <CBaseInput v-model="ownerName" label="著作者名" caution="名前を入力してください" is-required />
-    <CBaseSwitch v-model="isAllRightsReserved" label="無断転載禁止" caution="" is-required switch-label="ON/OFF" />
+    <CBaseSwitch v-model="isAllRightsReserved" label="All Rights Reserved" caution="" is-required switch-label="ON/OFF" />
     <CBaseHorizontalLine />
     <CBaseButton label="生成" @click="generate" />
     <CBaseHorizontalLine />
