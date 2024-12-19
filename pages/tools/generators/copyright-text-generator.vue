@@ -21,6 +21,9 @@ function generate(): void {
         case "MIT License":
           resultParagraphElement.textContent = `© ${firstCreatedYear.value} - ${lastUpdatedYear.value} ${ownerName.value} - All Rights Reserved. - This project is licensed under the MIT License.`;
           break;
+        case "Apache License 2.0":
+          resultParagraphElement.textContent = `© ${firstCreatedYear.value} - ${lastUpdatedYear.value} ${ownerName.value} - All Rights Reserved. - This project is licensed under the Apache License, Version 2.0.`;
+          break;
         default:
           resultParagraphElement.textContent = `© ${firstCreatedYear.value} - ${lastUpdatedYear.value} ${ownerName.value} - All Rights Reserved.`;
           break;
@@ -32,6 +35,9 @@ function generate(): void {
           break;
         case "MIT License":
           resultParagraphElement.textContent = `© ${firstCreatedYear.value} - ${lastUpdatedYear.value} ${ownerName.value} - This project is licensed under the MIT License.`;
+          break;
+        case "Apache License 2.0":
+          resultParagraphElement.textContent = `© ${firstCreatedYear.value} - ${lastUpdatedYear.value} ${ownerName.value} - This project is licensed under the Apache License, Version 2.0.`;
           break;
         default:
           resultParagraphElement.textContent = `© ${firstCreatedYear.value} - ${lastUpdatedYear.value} ${ownerName.value}`;
@@ -48,7 +54,7 @@ function generate(): void {
     <CBaseInput v-model="lastUpdatedYear" label="最後に更新された年（西暦）" caution="年を入力してください" is-required />
     <CBaseInput v-model="ownerName" label="著作者名" caution="名前を入力してください" is-required />
     <CBaseSwitch v-model="isAllRightsReserved" label="All Rights Reserved" caution="" is-required switch-label="ON/OFF" />
-    <CBaseRadio v-model="selectedLicense" label="ライセンス" caution="どれか一つだけ選んでください" is-required :checkboxes="['なし', 'MIT License']" />
+    <CBaseRadio v-model="selectedLicense" label="ライセンス" caution="どれか一つだけ選んでください" is-required :checkboxes="['なし', 'MIT License', 'Apache License 2.0']" />
     <CBaseHorizontalLine />
     <CBaseButton label="生成" @click="generate" />
     <CBaseHorizontalLine />
