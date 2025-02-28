@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import {Logger} from "@axuata/logica";
+
+const logger = new Logger();
 const firstCreatedYear = ref<string>('');
 const lastUpdatedYear = ref<string>('');
 const ownerName = ref<string>('');
@@ -44,6 +47,8 @@ function generate(): void {
           break;
       }
     }
+
+    logger.addStatus('info', 'primary').addMessage('正常に生成されました！').out('info');
   }
 }
 </script>
